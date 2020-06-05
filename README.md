@@ -25,8 +25,10 @@ In data preprocessing we adjusted the patient’s date of birth column which was
 The information of patients who have multiple diseases has been joined into a single row to decrease the redundancy in the dataset, for this a new table symptoms icd is created which aggregates all of the patients and diseases and creates a single entry for each admission.
 
 We created a new column for length of stay in Admissions table by calculating the difference between the date of release and date of admission of the patient. The diagnosis categories are the most important feature in predicting the LOS.
+
 <img src="https://user-images.githubusercontent.com/30766392/83521432-d9bd5800-a4fc-11ea-9845-9e8705c42096.png" />
 
 We then reduced the hospital admissions to four categories: urgent, newborn, emergency, elective. Newborns have the lowest median LOS whereas the urgent category has the highest. Elective admissions have a tighter distribution that favors a lower LOS, which makes sense since the severity of such conditions is usually less time critical.
+
 <img src="https://user-images.githubusercontent.com/30766392/83521649-26a12e80-a4fd-11ea-89dc-ee776cc82f9c.png" />
 
